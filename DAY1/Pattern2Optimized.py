@@ -9,4 +9,10 @@ def print_triangle(symbol="* ", rows=5):
         # The multiplication of the string 'symbol' by 'i' creates a string with 'i' symbols.
         # This is a more efficient way to print the symbols in each row compared to using a nested loop.
         # The print function automatically adds a newline after each row, so no need for an additional print statement.
-print_triangle("* ", 5)
+print_triangle()
+print()
+print_triangle("# ", 3)
+print()
+print_triangle("* ")
+print()
+print_triangle(4)

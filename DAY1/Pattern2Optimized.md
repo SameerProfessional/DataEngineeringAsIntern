@@ -118,12 +118,17 @@ print_triangle(symbol="♥ ", rows=4)
 
 ## ⚠️ Notes on Valid Input
 
-* `symbol` should be a **string**.
+⚠️ **Notes on Valid Input**
 
-  * If you pass an integer like `symbol=5`, it will raise a `TypeError`.
-* `rows` should be a **positive integer**.
+- `symbol` should always be a **string**.
+  - ❌ If you pass an **integer** like `symbol=5`, it may not raise an immediate error, but the output will be incorrect (you’ll see numbers instead of repeated symbols).
+  - ✅ To ensure proper output, use a **string** like `"*"` or `"# "` as the symbol.
 
-  * Negative values like `rows=-3` will result in **no output**, because `range(1, -2)` is an empty range.
+- `rows` should be a **non-negative integer**.
+  - ❌ If you pass a **string** like `rows="5"`, it will raise a `TypeError` because `range()` expects an integer.
+  - ⚠️ If you pass a **negative value** like `rows=-3`, it won’t raise an error, but it will produce **no output** because `range(1, -2)` is empty.
+
+✅ **Tip:** Add type checks to your function to prevent such invalid inputs and provide meaningful error messages.
 
 ## 📌 Looping
 

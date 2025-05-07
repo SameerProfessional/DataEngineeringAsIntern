@@ -21,7 +21,8 @@ def sub_String_exists(text1, text2):
     for i in range(last_index):
         large_text_substring = large_text[i:i+len(small_text)]
         if small_text == large_text_substring:
-           return True
+            found[0] = True
+            return True
         else:
             continue
     return False

@@ -22,9 +22,7 @@ print("Elements of the list are: ", nums)
 
 # Change the value 20 to 25
 
-for i in range(Number):
-    if nums[i] == 20:
-        nums[i] = 25
+nums = [25 if x == 20 else x for x in nums]
 
 # Get the elements of the list :
 
@@ -32,7 +30,7 @@ print("Elements of the list are : ", nums)
 
 # Replace the value 30 and 40 with 35 and 45
 
-nums[2::] = [35, 45]
+nums = [35 if x == 30 else 45 if x == 40 else x for x in nums]
 
 # Get the elements of the list :
 

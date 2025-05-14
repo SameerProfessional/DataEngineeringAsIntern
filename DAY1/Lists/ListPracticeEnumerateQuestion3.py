@@ -15,12 +15,16 @@ for i in range(count): # Loop from 0 to count-1
 
 # Get all the elements of the list along with their frequencies
 frequency = 0
-for index,element in enumerate(List1):
-    frequency = 0
-    for element1 in (List1):
-        if List1[index] == element1 and frequency < len(List1):
-            frequency+=1
+Info = []
+for element in (set(List1)):
+    if element not in Info[::2]:
+        Info = []
+        for index1,element1 in enumerate(List1):
+            if element == element1:
+                Info.append(element1)
+                Info.append(index1)
+        print("Element is {},frequency is {} and the list of indices are {}".format(element, len(Info[1::2]), Info[1::2]))
     else:
-        print("Element at index {} : {} and frequency of the element : {}".format(index, element, frequency))
-        
+        continue
+
     

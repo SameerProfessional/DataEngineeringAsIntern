@@ -1,0 +1,13 @@
+Concept,Description,Return Type,Examples/Notes
+int(input(...)),"Reads user input as a string and converts to integer",int,
+input(),"Returns user input as string",str,
+int(),"Converts a value to integer",int,
+range(number),"Returns a range object from 0 to number-1","range object","list(range(5)) => [0,1,2,3,4]"
+clear(),"Clears all elements from mutable types like list/set/dict",None,"Modifies in-place; useful for memory management"
+Indexing,"Access a single element using its index",Type of individual element,"sequence[index]; supports negative indexing"
+Slicing,"Extract subsequence with start:stop:step",Same as original sequence,"list[1:4], string[::2]"
+print(),"Prints to console",None,
+append(),"Adds one item to end of list",None,"list.append(value); modifies list in-place"
+insert(),"Inserts item at specific index",None,"list.insert(index, value); shifts subsequent elements"
+enumerate(),"Adds counter to iterable","enumerate object","for i, val in enumerate(iterable); supports start index"
+
